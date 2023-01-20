@@ -1,0 +1,30 @@
+from tabulate import tabulate
+data=[["roll no","student name","marks"],
+      [1,"sasha",34],
+      [2,"richard",56],
+      [3,"judy",34],
+      [4,"lori",56],
+      [5,"maggie",40]]
+table1=tabulate(data)
+table2=tabulate(data,headers='firstrow')
+print(table1)
+print('\n')
+print(table2)
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='pipe'))
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='github'))
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='prgtbl'))
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='orgtbl'))
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='presto'))
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='mediawiki'))
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='textile'))
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='latex'))
+print('\n')
+print(tabulate(data,headers='firstrow',tablefmt='youtrack'))
